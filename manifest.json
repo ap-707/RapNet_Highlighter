@@ -1,0 +1,20 @@
+{
+  "name": "Highlighter",
+  "description": "Base Level Extension",
+  "version": "1.8",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://trade.rapnet.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "highlighter.png"
+  }
+}
